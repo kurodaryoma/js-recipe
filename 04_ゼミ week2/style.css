@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f7f5;
+  padding: 5rem;
+}
+
+.hero__figure {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__figure__img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.about {
+  background-color: #00473e;
+  color: #00473e;
+  padding: 5rem;
+}
+
+.about__wrapper {
+  background-color: #00473e;
+  color: #f2f7f5;
+  border: 3px solid white;
+}
+
+.about__wrapper__text {
+  margin-top: 1rem;
+}
+
+.about__wrapper__title {
+  padding: 70px 70px 0px 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about__wrapper__text {
+  padding: 40px;
+}
