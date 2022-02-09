@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="nyuryoku">
+      <h3>入力画面</h3>
+      <div>
+        <input type="number" v-model="inputValue" />
+        <div>入力額:{{ inputValue }}円</div>
+        <button v-on:click="countUp">入金</button>
+        <button v-on:click="countDown">出金</button>
+      </div>
+      <h3>口座残高</h3>
+      <div>
+        <div>残高:{{ money }}円</div>
+      </div>
+
+      <h3>取引画面</h3>
+      <div v-for="item in items">
+        <p>日付:{{item.date}}</p>
+        <p>操作:{{item.sousa}}</p>
+        <p>金額:{{item.money}}</p>
+      </div>
+    </section>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
